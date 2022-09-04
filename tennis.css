@@ -1,0 +1,233 @@
+
+.tournament-container {
+    width: 1124px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.tournament-headers {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid #ccc;
+
+}
+.tournament-headers h3 {
+    width: 25%;
+    text-align:center;
+    font-weight: 400;
+    border-right: 1px dashed #ccc;
+    margin: 0;
+    padding:1rem;
+}
+
+.tournament-brackets {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    background: #fdfdfd;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid lightgray;
+}
+
+.tournament-brackets .bracket .team-item img{
+    padding-right: 8px;
+    width: 30px;
+}
+
+.bracket {
+    display: flex;
+    margin: 0;
+    padding: 30px 0;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+    border-right: 1px dashed #ccc;
+    flex: 1;
+}
+.bracket-1{
+    background-color: rgba(240,240,240, 0.9);
+}
+
+.bracket-3{
+    background-color: rgba(240,240,240, 0.9);
+}
+.bracket-2 .team-item{
+    background-color: rgba(240,240,240, 0.9);
+}
+.bracket-4 .team-item{
+    background-color: rgba(240,240,240, 0.9);
+}
+
+
+.team-item {
+    background-color: white;
+    padding: .5rem;
+    display: flex;
+    margin: .5rem 10px;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid black;
+    justify-content: center;
+}
+
+.team-item:after {
+    content:'';
+    border-color: #4f7a38;
+    border-width: 2px;
+    position: absolute;
+    display: block;
+    width: 10px;
+    right: -11px;
+}
+
+.team-item:nth-of-type(odd):after {
+    border-right-style: solid;
+    border-top-style: solid;
+    height: 100%;
+    top: 50%;
+}
+
+.team-item:nth-of-type(even):after {
+    border-right-style: solid;
+    border-bottom-style: solid;
+    height: 100%;
+    top: -50%;
+}
+
+.team-item:before {
+    content:'';
+    border-top: 2px solid #4f7a38;
+    position: absolute;
+    height: 2px;
+    width: 10px;
+    left: -10px;
+    top: 50%;
+}
+
+
+.bracket-2 .team-item:nth-of-type(odd):after {
+    height: 200%;
+    top: 50%;
+}
+.bracket-2 .team-item:nth-of-type(even):after {
+    height: 200%;
+    top: -150%;
+}
+
+.bracket-3 .team-item:nth-of-type(odd):after {
+    height: 350%;
+    top: 50%;
+}
+.bracket-3 .team-item:nth-of-type(even):after {
+    height: 350%;
+    top: -300%;
+}
+
+.bracket-4 .team-item:nth-of-type(odd):after {
+    height: 700%;
+    top: 50%;
+}
+.bracket-4 .team-item:nth-of-type(even):after {
+    height: 700%;
+    top: -650%;
+}
+
+.bracket:first-of-type .team-item:before {
+    display: none;
+}
+
+.bracket-4 .team-item:after{
+    display: none;
+}
+
+.bracket:last-of-type .team-item:before,
+.bracket:last-of-type .team-item:after {
+    display: none;
+}
+
+.team-item time {
+    display: inline-block;
+    background-color: #dbdbdb;
+    font-size: .8rem;
+    padding: 0 .6rem;
+}
+
+.container .league img {
+    width: 150px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.container .bundesliga img {
+    width: 100px;
+    cursor: pointer;
+}
+
+.container .styled-table img {
+    width: 30px;
+}
+
+.container .league {
+    display: flex;
+    justify-content: center;
+}
+
+.container .bundesliga {
+    display: flex;
+    justify-content: center;
+}
+
+.container .styled-table {
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 14px;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.container .styled-table thead tr {
+    background-color: #252425;
+    color: white;
+    text-align: left;
+}
+
+.container .styled-table tr {
+    text-align: center;
+}
+
+.container .styled-table th, .container .styled-table td {
+    padding: 10px 13px;
+}
+
+.container .styled-table tbody tr {
+    border-bottom: 1px solid lightgray;
+}
+
+.container .styled-table tbody tr:nth-of-type(even) {
+    background-color: rgba(240,240,240, 0.9);
+}
+
+.container .styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #252425;
+}
+
+.styled-table tbody tr .active-row {
+    font-weight: bold;
+    color: white;
+    background-color: darkorange;
+}
+.container .atp-ranking{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container h2{
+    margin-bottom: 20px;
+}

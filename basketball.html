@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>Sports Today</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="basketball.css">
+    <link rel="stylesheet" href="style.mobile.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!--    GOOGLE FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+    <!--    FONTAWESOME-->
+    <script src="https://kit.fontawesome.com/e336937d27.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <header>
+        <!--        TOP NAVBAR-->
+        <div class="top-buttons">
+            <!--        MENU AND SEARCH ICON-->
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="index.html"><img src="img/para%20fondo%20negro.png" alt="Sports Today Logo mobile"></a>
+            <div class="toggle-button"><i class="fa-solid fa-bars"></i></div>
+            <!--            TOP NAVBAR-->
+            <nav>
+                <ul>
+                    <li><a href="#">Ultimas noticia</a></li>
+                    <li><a href="#">Sociedad</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Latest</a></li>
+                    <li><a href="#">Ultimas noticia</a></li>
+                    <li><a href="#">Sociedad</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Latest</a></li>
+                    <li><a href="#">Sociedad</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Latest</a></li>
+                    <li><a href="#">Ultimas noticia</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <!--        MOBILE NAV BAR-->
+
+        <div class="mid-buttons-mobile">
+            <ul class="nav-ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="football.html">Football</a></li>
+                <li><a href="tennis.html">Tennis</a></li>
+                <li><a href="basketball.html">Basketball</a></li>
+                <li><a href="health.html">Health</a></li>
+            </ul>
+        </div>
+
+        <!--        LOGO AND MID NAVBAR-->
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="img/para%20fondo%20blanco.png" alt="Sports Today Logo"></a>
+            </div>
+            <div class="mid-buttons">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="football.html">Football</a></li>
+                    <li><a href="tennis.html">Tennis</a></li>
+                    <li><a href="basketball.html">Basketball</a></li>
+                    <li><a href="health.html">Health</a></li>
+                </ul>
+            </div>
+            <div class="today-date">
+                <div class="line"></div>
+                <div class="date" id="today"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+
+    </header>
+
+
+<!--    DESKTOP-->
+    <div id="basketball" class="container">
+<!--        HEADLINE-->
+        <div class="titular-nba">
+            <h1>Miami Heat destroyed the 76ers last night</h1>
+            <h2>The Miami Heat and Phoenix Suns and have a new competitor for the services of Brooklyn Nets star Kevin Durant: the Philadelphia 76ers.</h2>
+        </div>
+<!--        IMAGE SLIDER SWIPER.JS-->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/NBA/slider/wallpaperflare.com_wallpaper%20(1).jpg" alt="nba-player"></div>
+                <div class="swiper-slide"><img src="img/NBA/slider/wallpaperflare.com_wallpaper.jpg" alt="nba-player"></div>
+                <div class="swiper-slide"><img src="img/NBA/slider/wallpaperflare.com_wallpaper%20(2).jpg"alt="nba-player"></div>
+                <div class="swiper-slide"><img src="img/NBA/slider/wallpaperflare.com_wallpaper%20(3).jpg"alt="nba-player"></div>
+                <div class="swiper-slide"><img src="img/NBA/slider/wallpaperflare.com_wallpaper%20(4).jpg"alt="nba-player"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+<!--        SCOREBOARDS-->
+        <h3>LIVE NOW:</h3>
+<!--        LIVE-->
+<!--        CODE TAKEN FROM THE WEB ADAPTED WITH MODIFICATIONS (check report.html)-->
+        <div class="scoreboard">
+            <div class="match">
+                <div class="match-header">
+                    <div class="match-status">Live</div>
+                    <div class="match-tournament">NBA</div>
+                </div>
+                <div class="match-content">
+                    <div class="column">
+                        <div class="team team--home">
+                            <div class="team-logo">
+                                <img src="img/NBA/58419be4a6515b1e0ad75a58.png" />
+                            </div>
+                            <h2 class="team-name">Hawks</h2>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="match-details">
+                            <div class="match-score">
+                                <span class="match-score-number match-score-number--leading">58</span>
+                                <span class="match-score-divider">:</span>
+                                <span class="match-score-number">93</span>
+                            </div>
+                            <div class="match-time-lapsed">
+                                4th Q
+                            </div>
+                            <div class="match-bet-options">
+                                <button class="match-bet-option">1.48</button>
+                                <button class="match-bet-option">7.84</button>
+                                <button class="match-bet-option">3.24</button>
+                            </div>
+                            <button class="match-bet-place">Place a bet</button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="team team--away">
+                            <div class="team-logo">
+
+                                <img src="img/NBA/58419c6aa6515b1e0ad75a61.png" />
+                            </div>
+                            <h2 class="team-name">Celtics</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="match">
+                <div class="match-header">
+                    <div class="match-status">Live</div>
+                    <div class="match-tournament">NBA</div>
+                </div>
+                <div class="match-content">
+                    <div class="column">
+                        <div class="team team--home">
+                            <div class="team-logo">
+                                <img src="img/NBA/58419ce2a6515b1e0ad75a69.png" />
+                            </div>
+                            <h2 class="team-name">Warriors</h2>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="match-details">
+                            <div class="match-score">
+                                <span class="match-score-number match-score-number--leading">64</span>
+                                <span class="match-score-divider">:</span>
+                                <span class="match-score-number">66</span>
+                            </div>
+                            <div class="match-time-lapsed">
+                                3th Q
+                            </div>
+                            <div class="match-bet-options">
+                                <button class="match-bet-option">1.48</button>
+                                <button class="match-bet-option">7.84</button>
+                                <button class="match-bet-option">3.24</button>
+                            </div>
+                            <button class="match-bet-place">Place a bet</button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="team team--away">
+                            <div class="team-logo">
+
+                                <img src="img/NBA/58419cf6a6515b1e0ad75a6b.png" />
+                            </div>
+                            <h2 class="team-name">Bulls</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--        LOGO BREAK-->
+        <div class="sport">
+            <img class="mlb-logo" src="img/NBA/584d4c0e0a44bd1070d5d495.png" alt="MLB Logo"/>
+            <img class="nba-logo" src="img/NBA/nbalogo.png" alt="NBA Logo"/>
+            <img class="nfl-logo" src="img/NBA/5895deb9cba9841eabab6099.png" alt="NFL Logo"/>
+        </div>
+
+<!--        TODAY-->
+        <h3>TODAY:</h3>
+        <div class="scoreboard">
+            <div class="match">
+                <div class="match-header">
+                    <div class="match-tournament">NBA</div>
+                </div>
+                <div class="match-content">
+                    <div class="column">
+                        <div class="team team--home">
+                            <div class="team-logo">
+                                <img src="img/NBA/58419bd7a6515b1e0ad75a57.png" />
+                            </div>
+                            <h2 class="team-name">Hornets</h2>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="match-details">
+                            <div class="match-date"><strong>21:30</strong>
+                            </div>
+                            <div class="match-score">
+                                <span class="match-score-number match-score-number--leading">VS</span>
+                            </div>
+                            <div class="match-bet-options">
+                                <button class="match-bet-option">1.48</button>
+                                <button class="match-bet-option">7.84</button>
+                                <button class="match-bet-option">3.24</button>
+                            </div>
+                            <button class="match-bet-place">Place a bet</button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="team team--away">
+                            <div class="team-logo">
+
+                                <img src="img/NBA/58419c7ba6515b1e0ad75a62.png" />
+                            </div>
+                            <h2 class="team-name">Nets</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="match">
+                <div class="match-header">
+                    <div class="match-tournament">NBA</div>
+                </div>
+                <div class="match-content">
+                    <div class="column">
+                        <div class="team team--home">
+                            <div class="team-logo">
+                                <img src="img/NBA/58419c8da6515b1e0ad75a63.png" />
+                            </div>
+                            <h2 class="team-name">Cavaliers</h2>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="match-details">
+                            <div class="match-date"><strong>17:30</strong>
+                            </div>
+                            <div class="match-score">
+                                <span class="match-score-number match-score-number--leading">VS</span>
+                            </div>
+                            <div class="match-bet-options">
+                                <button class="match-bet-option">1.48</button>
+                                <button class="match-bet-option">7.84</button>
+                                <button class="match-bet-option">3.24</button>
+                            </div>
+                            <button class="match-bet-place">Place a bet</button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="team team--away">
+                            <div class="team-logo">
+
+                                <img src="img/NBA/58419ceda6515b1e0ad75a6a.png" />
+                            </div>
+                            <h2 class="team-name">Rockets</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--        THIS WEEK-->
+        <h3>THIS WEEK:</h3>
+        <div class="scoreboard">
+            <div class="match">
+                <div class="match-header">
+                    <div class="match-tournament">NBA</div>
+                </div>
+                <div class="match-content">
+                    <div class="column">
+                        <div class="team team--home">
+                            <div class="team-logo">
+                                <img src="img/NBA/new/58419b70a6515b1e0ad75a50.png" />
+                            </div>
+                            <h2 class="team-name">Nuggets</h2>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="match-details">
+                            <div class="match-date">
+                                25 May at <strong>21:30</strong>
+                            </div>
+                            <div class="match-score">
+                                <span class="match-score-number match-score-number--leading">VS</span>
+                            </div>
+                            <div class="match-bet-options">
+                                <button class="match-bet-option">1.48</button>
+                                <button class="match-bet-option">7.84</button>
+                                <button class="match-bet-option">3.24</button>
+                            </div>
+                            <button class="match-bet-place">Place a bet</button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="team team--away">
+                            <div class="team-logo">
+
+                                <img src="img/NBA/new/58419bf3a6515b1e0ad75a59.png" />
+                            </div>
+                            <h2 class="team-name">Raptors</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="match">
+                <div class="match-header">
+                    <div class="match-tournament">NBA</div>
+                </div>
+                <div class="match-content">
+                    <div class="column">
+                        <div class="team team--home">
+                            <div class="team-logo">
+                                <img src="img/NBA/new/58419ca3a6515b1e0ad75a64.png" />
+                            </div>
+                            <h2 class="team-name">76ers</h2>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="match-details">
+                            <div class="match-date">
+                                26 May at <strong>17:30</strong>
+                            </div>
+                            <div class="match-score">
+                                <span class="match-score-number match-score-number--leading">VS</span>
+                            </div>
+                            <div class="match-bet-options">
+                                <button class="match-bet-option">1.48</button>
+                                <button class="match-bet-option">7.84</button>
+                                <button class="match-bet-option">3.24</button>
+                            </div>
+                            <button class="match-bet-place">Place a bet</button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="team team--away">
+                            <div class="team-logo">
+
+                                <img src="img/NBA/new/58419d0aa6515b1e0ad75a6c.png" />
+                            </div>
+                            <h2 class="team-name">Lakers</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--        LOGO BREAK-->
+        <div class="sport">
+            <img class="mlb-logo" src="img/NBA/espn-png-logo-4142.png" alt="MLB Logo"/>
+            <img class="nba-logo" src="img/NBA/espn-png-logo-4158.png" alt="NBA Logo"/>
+            <img class="nfl-logo" src="img/NBA/pngwing.com.png" alt="NFL Logo"/>
+        </div>
+
+    </div>
+
+<!--    MOBILE-->
+    <div id="basketball-mobile">
+        <!--        HEADLINE-->
+        <div class="titular-nba">
+            <h1>Miami Heat destroyed the 76ers last night</h1>
+            <h2>The Miami Heat and Phoenix Suns and have a new competitor for the services of Brooklyn Nets star Kevin Durant: the Philadelphia 76ers.</h2>
+        </div>
+        <!--        IMAGE SLIDER-->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/NBA/slider/wallpaperflare.com_wallpaper.jpg"></div>
+                <div class="swiper-slide"><img src="img/NBA/slider/wallpaperflare.com_wallpaper%20(1).jpg"></div>
+                <div class="swiper-slide"><img src="img/NBA/slider/wallpaperflare.com_wallpaper%20(2).jpg"></div>
+                <div class="swiper-slide"><img src="img/NBA/slider/wallpaperflare.com_wallpaper%20(3).jpg"></div>
+                <div class="swiper-slide"><img src="img/NBA/slider/wallpaperflare.com_wallpaper%20(4).jpg"></div>
+            </div>
+        </div>
+        <!--        SCOREBOARDS-->
+        <h2>LIVE NOW:</h2>
+        <!--        LIVE-->
+        <div class="scoreboard">
+            <div class="match">
+                <div class="match-header">
+                    <div class="match-status">Live</div>
+                    <div class="match-tournament">NBA</div>
+                </div>
+                <div class="match-content">
+                    <div class="column">
+                        <div class="team team--home">
+                            <div class="team-logo">
+                                <img src="img/NBA/58419be4a6515b1e0ad75a58.png" />
+                            </div>
+                            <h2 class="team-name">Hawks</h2>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="match-details">
+                            <div class="match-score">
+                                <span class="match-score-number match-score-number--leading">58</span>
+                                <span class="match-score-divider">:</span>
+                                <span class="match-score-number">93</span>
+                            </div>
+                            <div class="match-time-lapsed">
+                                4th Q
+                            </div>
+                            <button class="match-bet-place">Place a bet</button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="team team--away">
+                            <div class="team-logo">
+
+                                <img src="img/NBA/58419c6aa6515b1e0ad75a61.png" />
+                            </div>
+                            <h2 class="team-name">Celtics</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="match">
+                <div class="match-header">
+                    <div class="match-status">Live</div>
+                    <div class="match-tournament">NBA</div>
+                </div>
+                <div class="match-content">
+                    <div class="column">
+                        <div class="team team--home">
+                            <div class="team-logo">
+                                <img src="img/NBA/58419ce2a6515b1e0ad75a69.png" />
+                            </div>
+                            <h2 class="team-name">Warriors</h2>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="match-details">
+                            <div class="match-score">
+                                <span class="match-score-number match-score-number--leading">64</span>
+                                <span class="match-score-divider">:</span>
+                                <span class="match-score-number">66</span>
+                            </div>
+                            <div class="match-time-lapsed">
+                                3th Q
+                            </div>
+                            <button class="match-bet-place">Place a bet</button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="team team--away">
+                            <div class="team-logo">
+
+                                <img src="img/NBA/58419cf6a6515b1e0ad75a6b.png" />
+                            </div>
+                            <h2 class="team-name">Bulls</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--        LOGO BREAK-->
+        <div class="sport">
+            <img class="mlb-logo" src="img/NBA/584d4c0e0a44bd1070d5d495.png" alt="MLB Logo"/>
+            <img class="nba-logo" src="img/NBA/nbalogo.png" alt="NBA Logo"/>
+            <img class="nfl-logo" src="img/NBA/5895deb9cba9841eabab6099.png" alt="NFL Logo"/>
+        </div>
+
+        <!--        TODAY-->
+        <h2>TODAY:</h2>
+        <div class="scoreboard">
+            <div class="match">
+                <div class="match-header">
+                    <div class="match-tournament">NBA</div>
+                </div>
+                <div class="match-content">
+                    <div class="column">
+                        <div class="team team--home">
+                            <div class="team-logo">
+                                <img src="img/NBA/58419bd7a6515b1e0ad75a57.png" />
+                            </div>
+                            <h2 class="team-name">Hornets</h2>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="match-details">
+                            <div class="match-date">
+                                20 May at <strong>21:30</strong>
+                            </div>
+                            <div class="match-score">
+                                <span class="match-score-number match-score-number--leading">VS</span>
+                            </div>
+                            <button class="match-bet-place">Place a bet</button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="team team--away">
+                            <div class="team-logo">
+
+                                <img src="img/NBA/58419c7ba6515b1e0ad75a62.png" />
+                            </div>
+                            <h2 class="team-name">Nets</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="match">
+                <div class="match-header">
+                    <div class="match-tournament">NBA</div>
+                </div>
+                <div class="match-content">
+                    <div class="column">
+                        <div class="team team--home">
+                            <div class="team-logo">
+                                <img src="img/NBA/58419c8da6515b1e0ad75a63.png" />
+                            </div>
+                            <h2 class="team-name">Cavaliers</h2>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="match-details">
+                            <div class="match-date">
+                                21 May at <strong>17:30</strong>
+                            </div>
+                            <div class="match-score">
+                                <span class="match-score-number match-score-number--leading">VS</span>
+                            </div>
+                            <button class="match-bet-place">Place a bet</button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="team team--away">
+                            <div class="team-logo">
+
+                                <img src="img/NBA/58419ceda6515b1e0ad75a6a.png" />
+                            </div>
+                            <h2 class="team-name">Rockets</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--        THIS WEEK-->
+        <h2>THIS WEEK:</h2>
+        <div class="scoreboard">
+            <div class="match">
+                <div class="match-header">
+                    <div class="match-tournament">NBA</div>
+                </div>
+                <div class="match-content">
+                    <div class="column">
+                        <div class="team team--home">
+                            <div class="team-logo">
+                                <img src="img/NBA/new/58419b70a6515b1e0ad75a50.png" />
+                            </div>
+                            <h2 class="team-name">Nuggets</h2>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="match-details">
+                            <div class="match-date">
+                                25 May at <strong>21:30</strong>
+                            </div>
+                            <div class="match-score">
+                                <span class="match-score-number match-score-number--leading">VS</span>
+                            </div>
+                            <button class="match-bet-place">Place a bet</button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="team team--away">
+                            <div class="team-logo">
+
+                                <img src="img/NBA/new/58419bf3a6515b1e0ad75a59.png" />
+                            </div>
+                            <h2 class="team-name">Raptors</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="match">
+                <div class="match-header">
+                    <div class="match-tournament">NBA</div>
+                </div>
+                <div class="match-content">
+                    <div class="column">
+                        <div class="team team--home">
+                            <div class="team-logo">
+                                <img src="img/NBA/new/58419ca3a6515b1e0ad75a64.png" />
+                            </div>
+                            <h2 class="team-name">76ers</h2>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="match-details">
+                            <div class="match-date">
+                                26 May at <strong>17:30</strong>
+                            </div>
+                            <div class="match-score">
+                                <span class="match-score-number match-score-number--leading">VS</span>
+                            </div>
+                            <button class="match-bet-place">Place a bet</button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="team team--away">
+                            <div class="team-logo">
+
+                                <img src="img/NBA/new/58419d0aa6515b1e0ad75a6c.png" />
+                            </div>
+                            <h2 class="team-name">Lakers</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--        LOGO BREAK-->
+        <div class="sport">
+            <img class="mlb-logo" src="img/NBA/espn-png-logo-4142.png" alt="MLB Logo"/>
+            <img class="nba-logo" src="img/NBA/espn-png-logo-4158.png" alt="NBA Logo"/>
+            <img class="nfl-logo" src="img/NBA/pngwing.com.png" alt="NFL Logo"/>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="top-bar">
+            <a href="#"><img src="img/para%20fondo%20negro.png"></a>
+            <div class="newsletter">
+                <h2>Subscribe to our newsletter</h2>
+                <form action="#">
+                    <div class="form-box">
+                        <input type="text" name="Email Address" placeholder="Enter your email address">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+            <div class="social-networks">
+                <a href="#"><i class="fab fa-square-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+            </div>
+        </div>
+        <!--        DESKTOP SITEMAP-->
+        <div class="sitemap">
+            <div class="col">
+                <ul>
+                    <li><span>Sports Today</span></li>
+                    <li><a href="#">Football</a></li>
+                    <li><a href="#">Tennis</a></li>
+                    <li><a href="#">Basketball</a></li>
+                    <li><a href="#">NFL</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li><span>Leagues</span></li>
+                    <li><a href="#">Premier League</a></li>
+                    <li><a href="#">Champions League</a></li>
+                    <li><a href="#">La Liga</a></li>
+                    <li><a href="#">International</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li><span>Tennis</span></li>
+                    <li><a href="#">Us Open</a></li>
+                    <li><a href="#">Roland Garros</a></li>
+                    <li><a href="#">Wimbledon</a></li>
+                    <li><a href="#">Australian Open</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li><span>About Us</span></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!--        SITEMAP MOBILE-->
+        <div class="sitemap-mobile">
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li><span>Sports Today</span></li>
+                        <li><a href="#">Football</a></li>
+                        <li><a href="#">Tennis</a></li>
+                        <li><a href="#">Basketball</a></li>
+                        <li><a href="#">NFL</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><span>Leagues</span></li>
+                        <li><a href="#">Premier League</a></li>
+                        <li><a href="#">Champions League</a></li>
+                        <li><a href="#">La Liga</a></li>
+                        <li><a href="#">International</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li><span>Tennis</span></li>
+                        <li><a href="#">Us Open</a></li>
+                        <li><a href="#">Roland Garros</a></li>
+                        <li><a href="#">Wimbledon</a></li>
+                        <li><a href="#">Australian Open</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><span>About Us</span></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright">
+            All Rights Reserved | Sports Today 2022
+        </div>
+        <div class="social-networks-mobile">
+            <a href="#"><i class="fab fa-square-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+        </div>
+    </footer>
+
+    <!--JS TAGS-->
+    <script src="today-date.js"></script>
+    <script src="hamburger%20menu.js"></script>
+
+    <!-- Swiper JS CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper Mobile-->
+    <script src="swiper.js"></script>
+    <!-- Initialize Swiper Desktop-->
+    <script src="swiper-desk.js"></script>
+
+</body>
+
+</html>

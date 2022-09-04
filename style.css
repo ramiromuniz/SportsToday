@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,200&display=swap');
+
+@media (min-width: 768px) {
+
+    /* UTILITIES */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Montserrat", sans-serif;
+        background: white;
+    }
+    .container {
+        width: 1124px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 25px;
+        display: block;
+    }
+
+    .row {
+        display: flex;
+        width: 100%;
+    }
+
+    /*HEADER*/
+    header .top-buttons{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 55px;
+        background:#252425;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 99;
+        justify-content: flex-start;
+    }
+    header .top-buttons nav{
+        display: flex;
+    }
+    header .top-buttons nav ul{
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        overflow: hidden;
+        list-style-type: none;
+    }
+
+    header .top-buttons nav ul li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: 100%;
+        margin: 0 10px;
+        float: left;
+    }
+    header .top-buttons nav ul li a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    header .top-buttons a img{
+        display: none;
+    }
+    header .top-buttons i{
+        font-size: 17px;
+        margin: 0 18px;
+        align-self: center;
+        color: white;
+        cursor: pointer;
+    }
+    header .top-buttons .toggle-button i{
+        font-size: 18px;
+        margin: 20px 18px;
+        align-self: center;
+        color: white;
+        cursor: pointer;
+    }
+    header .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        height: 120px;
+    }
+    header .logo a img{
+        width: 350px;
+        cursor: pointer;
+    }
+    header .mid-buttons-mobile{
+        display: none;
+    }
+    header .mid-buttons{
+        width: 100%;
+        height: 45px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+
+    header .mid-buttons ul{
+        display: flex;
+        list-style-type: none;
+    }
+    header .mid-buttons ul li{
+        margin: 0 20px;
+    }
+    header .mid-buttons ul li a{
+        color: #252425;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    header .today-date{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    header .today-date .line{
+        width: 100%;
+        border-bottom: 1px solid gray;
+    }
+    header .today-date .date{
+        flex-shrink: 0;
+        font-size: 14px;
+        margin: 0 10px;
+    }
+
+
+
+    /*NEWS FEED*/
+    #news-feed-mobile{
+        display: none;
+    }
+    #news-feed .row .left-col, #football-page .row .left-col {
+        width: 65%;
+    }
+
+    #news-feed .row .right-col, #football-page .row .right-col {
+        width: 35%;
+    }
+    #news-feed article {
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        padding-right: 2%;
+        height: 100%;
+        position: relative;
+    }
+
+    #news-feed .row .left-col article {
+        height: 100%;
+    }
+
+    #news-feed .row .right-col article, #football-page .row .right-col article {
+        height: auto;
+    }
+
+
+    #news-feed h1, #football-page h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 36px;
+        margin: 0 0 20px 0;
+    }
+
+    #news-feed h1:hover, #football-page h1:hover {
+        cursor: pointer;
+    }
+
+    #news-feed h2, #football-page h2 {
+        margin: 10px 0 10px 0;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    #news-feed p, #football-page p {
+        font-size: 20px;
+        color: gray;
+        padding-bottom: 15px;
+        flex-grow: 2;
+        cursor: pointer;
+    }
+
+    #news-feed .row .right-col article p, #football-page .row .right-col article p {
+        font-size: 15px;
+        color: gray;
+        padding-bottom: 15px;
+        flex-grow: 2;
+    }
+
+    #news-feed figure, #football-page figure {
+        margin: 0;
+        position: relative;
+        cursor: pointer;
+    }
+
+    #news-feed .row .right-col figure img, #football-page .row .right-col figure img {
+        width: 100%;
+        padding-bottom: 5px;
+        border-bottom: 1px solid lightgray;
+    }
+
+    #news-feed .row .left-col figure img, #football-page .row .left-col figure img {
+        width: 100%;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+
+    #news-feed .row .col figure img, #football-page .row .col figure img{
+        width: 100%;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        border-bottom: 1px solid lightgray;
+    }
+
+    #news-feed .row .line, #football-page .row .line {
+        border-bottom: 1px solid lightgray;
+    }
+
+    #news-feed .topic-break {
+        border-bottom: 1px solid lightgray;
+    }
+
+    /*CAPTION IN IMAGES: ARTICLES AUTHORS*/
+    #news-feed figure figcaption, #football-page figure figcaption{
+        width: auto;
+        padding: 10px;
+        border-radius: 5px;
+        background: rgba(0, 0, 0, 0.6);
+        font-size: 12px;
+        position: absolute;
+        bottom: 15px;
+        left: 10px;
+    }
+
+    #news-feed figure .topic, #football-page figure .topic {
+        width: auto;
+        padding: 10px;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.6);
+        font-size: 12px;
+        position: absolute;
+        bottom: 15px;
+        left: 150px;
+    }
+
+    #news-feed figure:hover figcaption, #football-page figure:hover figcaption {
+        background: black;
+        cursor: pointer;
+    }
+
+    #news-feed figure figcaption span, #football-page figure figcaption span {
+        color: white;
+    }
+
+    #news-feed figure .topic span, #football-page figure .topic span{
+        color: black;
+    }
+
+    #news-feed figure:hover .topic, #football-page figure:hover .topic {
+        background: white;
+        cursor: pointer;
+    }
+
+    /*******************/
+
+
+/*    FOOTER*/
+    footer{
+        display: flex;
+        flex-direction: column;
+        min-width: 1124px;
+        width: 100%;
+        background-color: #252425;
+        padding: 0;
+        height: 300px;
+    }
+
+    footer .top-bar{
+        display: flex;
+        width: 100%;
+        height: 65px;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+        position: relative;
+    }
+    footer .top-bar img{
+        position: absolute;
+        left: 50px;
+        top: 15px;
+        width: 200px;
+    }
+    /*NEWSLETTER*/
+    .newsletter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .newsletter h2{
+        color: white;
+        font-size: 17px;
+    }
+    .form-box{
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .form-box input{
+        font-size: 17px;
+        color: black;
+        padding: 7px;
+        border-radius: 5px;
+        outline: none;
+        background-color: white;
+    }
+    .form-box button{
+        color: white;
+        padding: 5px 10px;
+        font-size: 17px;
+        border: none;
+        border-radius: 5px;
+        background-color: orange;
+        cursor: pointer;
+        transition: 0.1s ease;
+    }
+    .form-box button:hover{
+        background-color: darkorange;
+    }
+    footer .top-bar .social-networks{
+        position: absolute;
+        right: 25px;
+        top: 22px;
+    }
+    footer .top-bar .social-networks i{
+        color: lightgray;
+        margin-right: 20px;
+        font-size: 22px;
+    }
+    footer .top-bar .social-networks i:hover{
+        color: white;
+    }
+    footer .sitemap{
+        display: flex;
+        width: 100%;
+    }
+    footer .sitemap-mobile{
+        display: none;
+    }
+    footer .sitemap .col{
+        width: 25%;
+        padding-left: 50px;
+    }
+    footer .sitemap ul {
+        padding: 0;
+        list-style-type: none;
+        margin-top: 20px;
+    }
+    footer .sitemap ul li{
+        font-size: 14px;
+        margin: 0 0 15px;
+    }
+
+    footer .sitemap ul li span{
+        color: darkgray;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    footer .sitemap ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    footer .sitemap ul li a:hover{
+        text-decoration: none;
+        color: lightgray;
+    }
+
+    footer .copyright{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 250px;
+        font-size: 11px;
+        color: lightgray;
+    }
+    footer .social-networks-mobile{
+        display: none;
+    }
+}

@@ -1,0 +1,1092 @@
+/* UTILITIES */
+@media (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Montserrat", sans-serif;
+        background: white;
+    }
+
+    .container {
+        width: 1124px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 25px;
+        display: none;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .row {
+        display: flex;
+        width: 100%;
+    }
+
+    /*HEADER*/
+
+    header .top-buttons {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 55px;
+        background: #252425;
+        left: 0;
+        top: 0;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 99;
+    }
+
+    header .top-buttons nav {
+        display: none;
+    }
+
+    header .top-buttons a img{
+        min-width: 80%;
+        max-width: 250px;
+        margin-top: 10px;
+    }
+    header .top-buttons .toggle-button i{
+        font-size: 24px;
+        margin: 15px 20px;
+        align-self: center;
+        color: white;
+    }
+
+    header .top-buttons i {
+        font-size: 24px;
+        margin: 0 20px;
+        align-self: center;
+        color: white;
+        cursor: pointer;
+    }
+    /*HIDDEN NAVBAR*/
+
+    header .mid-buttons-mobile {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+    }
+
+    header .mid-buttons-mobile .nav-ul{
+        display: none;
+        flex-direction: column;
+        list-style-type: none;
+        text-decoration: none;
+        background-color: rgba(37, 36, 37, 0.9);
+        padding: 15px 10px 0 10px;
+    }
+    header .mid-buttons-mobile .nav-ul li {
+        display: flex;
+        padding-bottom: 15px;
+    }
+    header .mid-buttons-mobile .nav-ul li a{
+        font-weight: 400;
+        font-size: 25px;
+        list-style-type: none;
+        text-decoration: none;
+        color: white;
+    }
+    /********************/
+
+    /*HOME PAGE (NEWSFEED)*/
+
+    #news-feed-mobile{
+        display: block;
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #news-feed article, #news-feed-mobile article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+
+    #news-feed h1, #news-feed-mobile h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+        margin: 0 0 20px 0;
+        color: black;
+    }
+
+    #news-feed p, #news-feed-mobile p {
+        font-size: 16px;
+        color: gray;
+        padding-bottom: 15px;
+        flex-grow: unset;
+        cursor: pointer;
+    }
+
+    #news-feed figure, #news-feed-mobile figure {
+        margin: 0 0 10px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    #news-feed .row .col figure img, #news-feed-mobile figure img {
+        width: 100%;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        border-bottom: 1px solid lightgray;
+    }
+
+    #news-feed .row .line {
+        border-bottom: 1px solid lightgray;
+        padding-bottom: 5px;
+    }
+
+    #news-feed .topic-break {
+        border-bottom: 1px solid lightgray;
+    }
+
+    /*CAPTION IN IMAGES: ARTICLES AUTHORS*/
+    #news-feed figure figcaption, #news-feed-mobile figure figcaption {
+        width: auto;
+        padding: 10px;
+        border-radius: 5px;
+        background: rgba(0, 0, 0, 0.6);
+        font-size: 12px;
+        position: absolute;
+        bottom: 15px;
+        left: 10px;
+    }
+
+    #news-feed figure .topic {
+        width: auto;
+        padding: 10px;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.6);
+        font-size: 12px;
+        position: absolute;
+        bottom: 15px;
+        left: 150px;
+    }
+
+    #news-feed figure figcaption span, #news-feed-mobile figure figcaption span {
+        color: white;
+    }
+
+    #news-feed figure .topic span {
+        color: black;
+    }
+
+    /*HEALTH PAGE*/
+    #post, #health-news{
+        margin: 50px 10px 15px 10px;
+    }
+    #post .label{
+        padding-top: 20px;
+    }
+    #post article{
+        display: flex;
+        flex-direction: column;
+    }
+    #post .label{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #post .label span{
+        font-size: 20px;
+        font-weight: bold;
+        color: darkorange;
+        margin-right: 15px;
+    }
+    #post .label .circle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: darkorange;
+        padding: 5px;
+        margin-right: 10px;
+    }
+    #post .label .circle i{
+        color: white;
+    }
+    #post .label small{
+        color: gray;
+        font-size: 12px;
+    }
+    #post h1{
+        color: black;
+        font-size: 32px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    #post h2{
+        color: gray;
+        font-size: 20px;
+        font-weight: normal;
+    }
+    #post .author{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-bottom: 15px;
+        border-bottom: 1px solid lightgray;
+        margin-top: 20px;
+    }
+    #post .author img{
+        width: 64px;
+        border-radius: 50%;
+        border: 1px solid lightgray;
+        margin-right: 10px;
+    }
+    #post .author .info{
+        display: flex;
+        flex-direction: column;
+    }
+    #post .author .info .name{
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    #post .author .info .name span{
+        font-weight: bold;
+        cursor: pointer;
+    }
+    #post .author .info .fecha{
+        font-size: 14px;
+        color: gray;
+        margin-bottom: 5px;
+    }
+    #post .author .info .email{
+        font-size: 14px;
+        color: gray;
+    }
+    #post .rrss{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top:15px;
+        cursor: pointer;
+    }
+    #post .rrss .fa-facebook-f{color: rgb(42,110,227)}
+    #post .rrss .fa-twitter{color: rgb(42,171,227)}
+    #post .rrss .fa-linkedin-in{color: rgb(14,62,143)}
+    #post .rrss .fa-youtube{color: rgb(198,65,65)}
+    #post .rrss .fa-telegram{color: rgb(107,206,120)}
+    #post .rrss .fa-google-plus-g{color: rgb(200,60,70)}
+
+    #post .rrss i{
+        margin: 0 20px;
+        font-size: 17px;
+    }
+    #post figure{
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    #post figure figcaption{
+        color: rgb(80,80,80);
+        font-size: 12px;
+        margin: 5px;
+        max-width: 750px;
+    }
+    #post img{
+        width: 100%;
+        max-width: 750px;
+    }
+    #post p{
+        max-width: 750px;
+        font-size: 17px;
+        color: black;
+        line-height: 30px;
+    }
+    #health-news p{
+        max-width: 750px;
+        font-size: 17px;
+        color: black;
+        line-height: 30px;
+        padding-bottom: 20px;
+    }
+    #post p span{
+        color: black;
+        font-weight: bold;
+    }
+    #post .illness{
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    #post .illness li{
+        margin-bottom: 15px;
+    }
+
+
+    /*BMI CALCULATOR*/
+
+    #health-news{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    #health-news .title{
+        display: flex;
+        flex-direction: column;
+    }
+    #health-news .title h1 {
+        font-size: 30px;
+        margin: 15px 0 20px 0px;
+    }
+
+    .bmi-calculator {
+        width: 70%;
+        background-color: #252425;
+        text-align: center;
+        padding: 15px;
+        border-radius: 10px;
+        margin-left: 15%;
+    }
+
+    #health-news .bmi-calculator p {
+        color: white;
+    }
+
+    #w, #h {
+        color: white;
+        text-align: left;
+        font-size: 15px;
+        outline: none;
+        border: none;
+        background: none;
+        border-bottom: 1px solid white;
+        width: 150px;
+    }
+
+    #health-news .bmi-calculator span {
+        color: red;
+    }
+
+    #result {
+        margin-top: 5px;
+        color: white;
+    }
+
+    #btn {
+        font-size: 15px;
+        margin-top: 5px;
+        border: none;
+        color: black;
+        width: 150px;
+        padding: 10px;
+        border-radius: 30px;
+        outline: none;
+        cursor: pointer;
+        margin-bottom: 15px;
+    }
+
+    #health-news .bmi-calculator #info {
+        font-size: 12px;
+    }
+
+
+
+    /*BASKETBALL PAGE*/
+
+
+    #basketball-mobile{
+        display: block;
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /*SWIPER.JS MOBILE*/
+
+    .swiper {
+        width: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*************END***************/
+
+
+    #basketball-mobile .titular-nba h2{
+        font-weight: 400;
+        color: gray;
+        margin-bottom: 15px;
+    }
+
+
+    #basketball-mobile .match {
+        background-color: #252425;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 0 2px 0 #303030, 0 4px 4px 0 #303030;
+        color: white;
+        margin-bottom: 50px;
+    }
+
+    #basketball-mobile .match-header {
+        display: flex;
+        padding: 10px;
+        border-bottom: 1px solid gray;
+    }
+
+    #basketball-mobile .match-status {
+        background-color: rgb(194, 16, 16);
+        color: white;
+        padding: 0 10px;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        line-height: 1;
+        margin-right: auto;
+    }
+
+    #basketball-mobile .match-status:before {
+        content: "";
+        display: block;
+        width: 6px;
+        height: 6px;
+        background-color: currentcolor;
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+
+    #basketball-mobile .match-tournament {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    #basketball-mobile .match-content {
+        display: flex;
+        position: relative;
+    }
+
+    #basketball-mobile .column {
+        padding: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% / 3);
+    }
+
+    #basketball-mobile .team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #basketball-mobile .team-logo {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: lightgray;
+    }
+
+    #basketball-mobile .team-logo img {
+        width: 40px;
+    }
+
+    #basketball-mobile .team-name {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    #basketball-mobile .match-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #basketball-mobile .match-date {
+        font-size: 14px;
+        color: white;
+    }
+
+    #basketball-mobile .match-date strong{
+        color: white;
+    }
+
+    #basketball-mobile .match-score {
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+    }
+
+    #basketball-mobile .match-score-number {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    #basketball-mobile .match-score-divider {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 1;
+        color: white;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #basketball-mobile .match-time-lapsed {
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 8px;
+        margin-bottom: 10px;
+    }
+
+    #basketball-mobile .match-bet-place {
+        position: absolute;
+        bottom: -16px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: none;
+        background-color: rgb(207, 232, 169);
+        border-radius: 6px;
+        padding: 10px 30px;
+        color: black;
+        font-size: 14px;
+        box-shadow: 0 4px 8px 0 #303030;
+    }
+
+    #basketball-mobile .nba-logo {
+        width: 100px;
+    }
+
+    #basketball-mobile .nfl-logo {
+        width: 60px;
+    }
+
+    #basketball-mobile .mlb-logo {
+        width: 100px;
+    }
+
+    #basketball-mobile .sport {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+        margin-bottom: 20px;
+    }
+
+    #basketball-mobile .scoreboard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 40px 0 40px;
+        border-bottom: 1px solid lightgray;
+    }
+
+    #basketball-mobile h2 {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+
+    /*TENNIS PAGE*/
+    .tournament-container{
+       display: block;
+       width: 100%;
+       margin-top: 60px;
+       padding: 10px;
+       margin-right: auto;
+       margin-left: auto;
+       text-align: center;
+   }
+
+    .tournament-headers {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-bottom: 1px solid #ccc;
+
+    }
+    .tournament-headers h3 {
+        width: 25%;
+        text-align:center;
+        font-weight: 400;
+        border-right: 1px dashed #ccc;
+        margin: 0;
+        padding:1rem;
+    }
+
+    .tournament-brackets {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        background: #fdfdfd;
+        margin-bottom: 50px;
+    }
+
+    .tournament-brackets .bracket .team-item img{
+        padding-right: 8px;
+        width: 30px;
+    }
+
+
+    .bracket {
+        /*background-color: lightgreen;*/
+        display: flex;
+        margin: 0;
+        padding: 30px 0;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style-type: none;
+        border-right: 1px dashed #ccc;
+        flex: 1;
+    }
+    .bracket-1{
+        background-color: rgba(240,240,240, 0.9);
+    }
+
+    .bracket-3{
+        background-color: rgba(240,240,240, 0.9);
+    }
+    .bracket-2 .team-item{
+        background-color: rgba(240,240,240, 0.9);
+    }
+    .bracket-4 .team-item{
+        background-color: rgba(240,240,240, 0.9);
+    }
+
+
+    .team-item {
+        background-color: white;
+        padding: .5rem;
+        display: flex;
+        margin: .5rem 10px;
+        position: relative;
+        vertical-align: middle;
+        text-align: center;
+        border: 1px solid black;
+        justify-content: center;
+    }
+
+    .team-item:after {
+        content:'';
+        border-color: #4f7a38;
+        border-width: 2px;
+        position: absolute;
+        display: block;
+        width: 10px;
+        right: -11px;
+    }
+
+    .team-item:nth-of-type(odd):after {
+        border-right-style: solid;
+        border-top-style: solid;
+        height: 100%;
+        top: 50%;
+    }
+
+    .team-item:nth-of-type(even):after {
+        border-right-style: solid;
+        border-bottom-style: solid;
+        height: 100%;
+        top: -50%;
+    }
+
+    .team-item:before {
+        content:'';
+        border-top: 2px solid #4f7a38;
+        position: absolute;
+        height: 2px;
+        width: 10px;
+        left: -10px;
+        top: 50%;
+    }
+
+
+    .bracket-2 .team-item:nth-of-type(odd):after {
+        height: 200%;
+        top: 50%;
+    }
+    .bracket-2 .team-item:nth-of-type(even):after {
+        height: 200%;
+        top: -150%;
+    }
+
+    .bracket-3 .team-item:nth-of-type(odd):after {
+        height: 350%;
+        top: 50%;
+    }
+    .bracket-3 .team-item:nth-of-type(even):after {
+        height: 350%;
+        top: -300%;
+    }
+
+    .bracket-4 .team-item:nth-of-type(odd):after {
+        height: 700%;
+        top: 50%;
+    }
+    .bracket-4 .team-item:nth-of-type(even):after {
+        height: 700%;
+        top: -650%;
+    }
+
+    .bracket:first-of-type .team-item:before {
+        display: none;
+    }
+
+    .bracket-4 .team-item:after{
+        display: none;
+    }
+
+    .bracket:last-of-type .team-item:before,
+    .bracket:last-of-type .team-item:after {
+        display: none;
+    }
+
+    .team-item time {
+        display: inline-block;
+        background-color: #dbdbdb;
+        font-size: .8rem;
+        padding: 0 .6rem;
+    }
+    /*ATP RANKING*/
+
+    .container .league img {
+        width: 150px;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+    .container .bundesliga img {
+        width: 100px;
+        cursor: pointer;
+    }
+
+    .container .styled-table img {
+        width: 30px;
+    }
+
+    .container .league {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container .bundesliga {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container .styled-table {
+        border-collapse: collapse;
+        margin: 15px 0;
+        font-size: 14px;
+        min-width: 300px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .container .styled-table thead tr {
+        background-color: #252425;
+        color: white;
+        text-align: left;
+    }
+
+    .container .styled-table tr {
+        text-align: center;
+    }
+
+    .container .styled-table tbody tr {
+        border-bottom: 1px solid lightgray;
+    }
+
+    .container .styled-table tbody tr:nth-of-type(even) {
+        background-color: rgba(240,240,240, 0.9);
+    }
+
+    .container .styled-table tbody tr:last-of-type {
+        border-bottom: 2px solid #252425;
+    }
+
+    .container .atp-ranking{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    /*FOOTBALL PAGE*/
+    #football-page{
+        display: none;
+    }
+    #football-page-mobile{
+        display: block;
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+    #football-page-mobile article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+
+    #football-page-mobile h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+        margin: 0 0 20px 0;
+        color: black;
+    }
+
+    #football-page-mobile p {
+        font-size: 16px;
+        color: gray;
+        padding-bottom: 15px;
+        flex-grow: unset;
+        cursor: pointer;
+    }
+
+    #football-page-mobile figure {
+        margin: 0 0 10px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    #football-page-mobile figure img {
+        width: 100%;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        border-bottom: 1px solid lightgray;
+    }
+
+    /*CAPTION IN IMAGES: ARTICLES AUTHORS*/
+    #football-page-mobile figure figcaption {
+        width: auto;
+        padding: 10px;
+        border-radius: 5px;
+        background: rgba(0, 0, 0, 0.6);
+        font-size: 12px;
+        position: absolute;
+        bottom: 15px;
+        left: 10px;
+    }
+
+    #football-page-mobile figure figcaption span {
+        color: white;
+    }
+    /*TABLE POS*/
+    #football-page-mobile .league img {
+        width: 150px;
+        cursor: pointer;
+    }
+
+    #football-page-mobile .bundesliga img {
+        width: 100px;
+        cursor: pointer;
+    }
+
+    #football-page-mobile .styled-table img {
+        width: 30px;
+    }
+
+    #football-page-mobile .league {
+        display: flex;
+        justify-content: center;
+    }
+
+    #football-page-mobile .bundesliga {
+        display: flex;
+        justify-content: center;
+    }
+
+    #football-page-mobile .styled-table {
+        border-collapse: collapse;
+        margin: 15px;
+        font-size: 14px;
+        min-width: 300px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+
+    #football-page-mobile .styled-table thead tr {
+        background-color: #252425;
+        color: white;
+        text-align: left;
+    }
+
+    #football-page-mobile .styled-table tr {
+        text-align: center;
+    }
+
+    #football-page-mobile .styled-table tbody tr {
+        border-bottom: 1px solid lightgray;
+    }
+
+    #football-page-mobile .styled-table tbody tr:nth-of-type(even) {
+        background-color: rgb(220, 220, 220);
+    }
+
+    #football-page-mobile .styled-table tbody tr:last-of-type {
+        border-bottom: 2px solid #252425;
+    }
+
+    .styled-table tbody tr .active-row {
+        font-weight: bold;
+        color: white;
+        background-color: darkorange;
+    }
+
+    #football-page-mobile article {
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        padding-right: 2%;
+    }
+
+    #football-page-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /*******************/
+    /*    FOOTER*/
+    footer {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        background-color: #252425;
+        height: auto;
+        padding: 0 15px;
+    }
+
+    footer .top-bar {
+        display: flex;
+        width: 100%;
+        height: 65px;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+        position: relative;
+    }
+
+    footer .top-bar img {
+        position: absolute;
+        top:18px;
+        width: 200px;
+        margin-left: 10px;
+    }
+
+    /*NEWSLETTER*/
+    .newsletter {
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        display: none;
+    }
+
+    footer .top-bar .social-networks {
+        position: absolute;
+        right: 25px;
+        top: 22px;
+        display: none;
+    }
+
+    footer .sitemap {
+        width: 100%;
+        display: none;
+    }
+    footer .sitemap-mobile .col{
+        width: 50%;
+        padding-left: 30px;
+    }
+
+    footer .sitemap-mobile ul {
+        padding: 0;
+        list-style-type: none;
+        margin-top: 20px;
+    }
+
+    footer .sitemap-mobile ul li {
+        font-size: 11px;
+        margin: 0 0 15px;
+    }
+
+    footer .sitemap-mobile ul li span {
+        color: darkgray;
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    footer .sitemap-mobile ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    footer .copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 45px;
+        font-size: 11px;
+        color: lightgray;
+    }
+
+    footer .social-networks-mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    footer .social-networks-mobile a i {
+        color: lightgray;
+        margin-right: 12px;
+        font-size: 20px;
+    }
+}

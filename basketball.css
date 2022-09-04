@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,200&display=swap');
+
+@media (min-width: 768px) {
+
+    .match {
+        background-color: #252425;
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        border-radius: 10px;
+        box-shadow: 0 0 2px 0 #303030, 0 4px 4px 0 #303030;
+        color: white;
+        margin-bottom: 50px;
+    }
+
+    .match-header {
+        display: flex;
+        padding: 16px;
+        border-bottom: 2px solid gray;
+    }
+
+    .match-status {
+        background-color: rgb(194, 16, 16);
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        line-height: 1;
+        margin-right: auto;
+    }
+
+    .match-status:before {
+        content: "";
+        display: block;
+        width: 6px;
+        height: 6px;
+        background-color: currentcolor;
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+
+    .match-tournament {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+    }
+
+    .match-tournament img {
+        width: 80px;
+        margin-right: 12px;
+    }
+
+    .match-content {
+        display: flex;
+        position: relative;
+    }
+
+    .column {
+        padding: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% / 3);
+    }
+
+    .team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-logo {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: white;
+        box-shadow: 0 4px 4px 0 #303030,
+        0 0 0 15px lightgray;
+    }
+
+    .team-logo img {
+        width: 50px;
+    }
+
+    .team-name {
+        text-align: center;
+        margin-top: 24px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .match-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .match-date, .match-referee {
+        font-size: 14px;
+        color: white;
+    }
+
+    .match-date strong, .match-referee {
+        color: white;
+    }
+
+    .match-score {
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+    }
+
+    .match-score-number {
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    .match-score-divider {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1;
+        color: white;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .match-time-lapsed {
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 8px;
+    }
+
+    .match-referee {
+        margin-top: 12px;
+    }
+
+    .match-bet-options {
+        display: flex;
+        margin-top: 8px;
+        padding-bottom: 12px;
+    }
+
+
+    .match-bet-option {
+        margin-left: 4px;
+        margin-right: 4px;
+        margin-top: 10px;
+        border: 1px solid lightgray;
+        background-color: #F9F9F9;
+        border-radius: 2px;
+        color: black;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 4px 8px;
+        cursor: pointer;
+    }
+
+    .match-bet-place {
+        position: absolute;
+        bottom: -16px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: none;
+        background-color: rgb(207, 232, 169);
+        border-radius: 6px;
+        padding: 10px 48px;
+        color: black;
+        font-size: 14px;
+        box-shadow: 0 4px 8px 0 #303030;
+    }
+
+    .match-bet-place:hover {
+        background-color: rgb(95, 208, 104);
+        cursor: pointer;
+    }
+
+    #basketball .nba-logo {
+        width: 130px;
+    }
+
+    #basketball .nfl-logo {
+        width: 90px;
+    }
+
+    #basketball .mlb-logo {
+        width: 130px;
+    }
+
+    #basketball .sport {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+        margin-bottom: 20px;
+    }
+
+    #basketball .scoreboard {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 40px 0 40px;
+        border-bottom: 1px solid lightgray;
+    }
+    #basketball h3{
+        margin-top: 20px;
+    }
+
+    #basketball h2 {
+        margin-top: 20px;
+        color: lightgray;
+        font-size: 17px;
+        font-weight: normal;
+    }
+    #basketball .titular-nba h2 {
+        margin-top: 20px;
+        color: gray;
+        font-size: 17px;
+        font-weight: normal;
+        margin-bottom: 20px;
+    }
+
+    #basketball-mobile {
+        display: none;
+    }
+
+    /*SWIPER.JS*/
+    .swiper {
+        width: 100%;
+        display: flex;
+        position: relative;
+        z-index: 0;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #basketball .swiper .swiper-button-next, #basketball .swiper .swiper-button-prev{
+        color: white;
+        font-weight: 600;
+    }
+
+    /*************END***************/
+
+}
